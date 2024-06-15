@@ -337,7 +337,6 @@ section {
   width: 50%;
 } 
 
-
 .contact form .input-box input,
 .contact form textarea {
   width: 100%;
@@ -388,6 +387,131 @@ section {
   margin-top: 40px;
   font-size: 16px;
 }
+
+.skills {
+ 
+  /* justify-content: center;
+  align-items: center;
+  gap: 10rem; */
+  background-color: var(--bg-color);
+}
+
+.skill-bars h1{
+  color: var(--text-color);
+  font-weight: 800;
+  font-size: 7rem;
+  text-align: center;
+
+}
+
+.skill-bars{
+  padding: 25px 30px;
+
+  background: rgba(183, 183, 183, 0.15);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--main-color);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+
+}
+.skill-bars .bars{
+  margin: 20px 0;
+
+}
+.skill-bars .bars:first-child{
+  margin-top: 0;
+}
+.skill-bars .bars .info{
+  margin-bottom: 5px;
+
+}
+.skill-bars .bars .info span{
+  color: #f1f1f1;
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText{
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+.skill-bars .bars .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f1f1f1;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+                     0 1px  rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;                  
+}
+
+@keyframes animate{
+  100%{
+    transform: scaleX(1);
+  }
+  
+}
+ 
+.bars .progress-line span{
+  height: 110%;
+  position: absolute;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.bars .progress-line.javaScript span{
+  width: 60%;
+  background-color: gold;
+  box-shadow: 0 0 25px gold;
+  transition: 0.3s ease;
+}
+.bars .progress-line.javaScript span:hover{
+  box-shadow:0 0 25px gold,
+            0 0 25px gold ;
+}
+
+.bars .progress-line.html span{
+  width: 100%;
+  background-color: orangered;
+  box-shadow: 0 0 25px orangered;
+  transition: 0.3s ease;
+}
+.bars .progress-line.html span:hover{
+  box-shadow:0 0 25px orangered,
+            0 0 25px orangered ;
+}
+
+.bars .progress-line.css span{
+  width: 80%;
+  background-color: blue;
+  box-shadow: 0 0 25px blue;
+  transition: 0.3s ease;
+}
+.bars .progress-line.css span:hover{
+  box-shadow:0 0 25px blue,
+            0 0 25px blue ;
+}
+
+.bars .progress-line.mysql span{
+  width: 70%;
+  background-color: green;
+  box-shadow: 0 0 25px green;
+  transition: 0.3s ease;
+}
+.bars .progress-line.mysql span:hover{
+  box-shadow:0 0 25px green,
+            0 0 25px green ;
+} 
+
 
 @media(max-width:1024px) {
   #menu-icon {
