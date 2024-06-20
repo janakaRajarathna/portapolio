@@ -307,7 +307,7 @@ section {
 }
 
 .contact {
-  background-color: var(--second-bg-color);
+  background-color: var(--bg-color);
 
 }
 
@@ -354,7 +354,7 @@ section {
 
 
 .footer {
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
   padding: 50px 0;
 }
 
@@ -389,11 +389,7 @@ section {
 }
 
 .skills {
- 
-  /* justify-content: center;
-  align-items: center;
-  gap: 10rem; */
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
 }
 
 .skill-bars h1{
